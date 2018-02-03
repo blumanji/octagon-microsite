@@ -1,0 +1,22 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900);
+
+.hero {
+    height: 100%;
+    url(https://static.pexels.com/photos/547125/pexels-photo-547125.jpeg)
+}
+
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: mediumspringgreen;
+}
+
+
+.grid-test {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30%
+}
