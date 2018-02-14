@@ -1,4 +1,29 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,900);
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:500,700');
+
+/*  font settings
+font-family: 'Raleway', sans-serif;
+font-weight: 400;
+font-weight: 500;
+font-weight:700;
+
+font-family: 'Roboto', sans-serif;
+font-weight: 500;
+font-weight:700;
+*/
+
+h1, h2 {
+font-family: "Raleway", sans-serif;
+font-weight: 700;
+}
+
+p, span {
+  font-family: 'Roboto', sans-serif;
+font-weight: 500;
+}
+
+body {
+background-color: #b2bec3
+}
 
 .hero-image {
     height: 90vh;
@@ -16,7 +41,7 @@ text-align: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: #dfe6e9;
 }
 
 .nav {
@@ -24,11 +49,12 @@ text-align: center;
   top: 0;
   left: 0;
   right: 0;
-  background-color: mediumspringgreen;
+  background-color: #dfe6e9;
   display: flex;
   align-content: center;
   align-items: center;
   z-index: 3;
+  box-shadow: 1px 1px 3px black;
 }
 
 .nav > span {
@@ -38,6 +64,36 @@ text-align: center;
   margin-left: 1em;
   font-size: 130%;
 }
+
+.nav a:link    {
+  /* Applies to unvisited links in class nav */
+  text-decoration:  none;
+  font-weight:      500;
+  background-color: transparent;
+  color:           #2d3436;
+  } 
+.nav a:visited {
+  /* Applies to visited links in class nav */
+  text-decoration:  none;
+  font-weight:      500;
+  background-color: transparent;
+  color:            #2d3436;
+  } 
+.nav a:hover   {
+  /* Applies to links under the pointer in class nav */
+  text-decoration:  none;
+  font-weight:      700;
+  background-color: transparent;
+  color:            #e17055;
+  } 
+.nav a:active  {
+  /* Applies to activated links in class nav */
+  text-decoration:  none;
+  font-weight:      500;
+  background-color: transparent;
+  color: #2d3436;
+  } 
+
 
 #site-name {
   height: 2em;
@@ -77,27 +133,29 @@ border-radius: 15px;
 .text-block {
   margin-top: 2em;
   margin-left: 3em;
-  padding-right: 3em;
+  margin-right: 3em;
+  padding: 2em 4em 2em 4em;
+  background-color: #dfe6e9;
+  box-shadow: 1px 1px 3px grey;
 }
 
 .text-block > h1 {
 text-align: center;
+font-size: calc(1em + 8vmin);
+line-height: calc(1em + 1.2vmin);
 }
 
 .text-block > h2 {
-text-align: 
+text-align: left;
+font-size: calc(1em + 1.2vmin);
+  line-height: calc(1em + 2vmin); 
 }
 
 .text-block > p {
-
-}
-.text-block > ul {
-  
+font-size: calc(1em + 0.7vmin);
+  line-height: calc(1em + 1.5vmin);
 }
 
-.text-block > li {
-  
-}
 
 .footer {
 
